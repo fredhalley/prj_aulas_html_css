@@ -150,3 +150,28 @@ strong{
     color: #008ff7;
     font-weight: 600;
 }
+
+.minicurso-realce{
+    font-weight: 600;
+}
+
+/* SEÇÃO RODAPE */
+
+.rodape-titulo{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.rodape-subtitulo{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.rodape-seg-subtitulo{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.rodape-link{
+    color: #1a77a4;
+}
