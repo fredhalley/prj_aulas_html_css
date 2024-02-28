@@ -1,0 +1,152 @@
+h1, h2, h3, h4, h5, h6, li, a, p{
+    font-family: "Montserrat", sans-serif;    
+    color: #404040;
+}
+
+h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+p{
+    font-size: 16px;
+}
+
+strong{
+    font-weight: 600;
+}
+
+.botao{
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* CABEÇALHO */
+
+.item-lista-cabecalho a{
+    color: #112e61;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* SEÇÃO HERO */
+
+
+.hero-paragrafo{
+    font-size: 19px;
+}
+
+.hero-botao{
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* SEÇÃO CONTEUDOS GRATUITOS */
+
+/* .gratuito-h2{
+    font-weight: 400;
+    font-size: 35px;
+} */
+
+.gratuito-realce{
+    color: #7a40be;
+    font-weight: 600;
+}
+
+.gratuito-h3{
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.gratuito-link-lista{
+    font-size: 19px;
+    text-decoration: none;
+}
+
+/* SEÇÃO DIFERENCIAIS */
+
+/* .diferenciais-h2{
+    font-size: 35px;
+    font-weight: 400;
+} */
+
+.diferenciais-h2 strong{
+    font-weight: 600;   
+}
+
+.diferenciais-p{
+    font-size: 19px;
+}
+
+.diferenciais-h3{
+    color: #005e88;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.diferenciais-h3-empresas{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.diferenciais-h3-empresas a{
+    color: #005e88;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* SEÇÃO O QUE FALAM */
+
+.oquefalam-h2 span{
+    font-weight: 600;
+}
+
+/*  */
+
+.blog-postadoem{
+    font-size: 15px;
+}
+
+.blog-postadoem a{
+    font-weight: 600;
+    color: #f7a70c;
+    text-decoration: none;
+}
+
+.blog-titulo-post{
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.blog-postagem{
+    font-size: 17px;
+}
+
+/*  */
+
+.como-span{
+    font-weight: 600;
+}
+
+.como-lista li{
+    font-size: 19px;
+}
+
+.como-paragrafo{
+    font-size: 19px;
+}
+
+.como-lista li a, .como-paragrafo a{
+    color: #008ff7;
+    font-weight: 600;
+}
