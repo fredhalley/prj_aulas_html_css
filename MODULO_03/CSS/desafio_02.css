@@ -1,51 +1,96 @@
-h1, h2, h3, h4, h5, h6, li, a, p{
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
     font-family: "Montserrat", sans-serif;    
     color: #404040;
 }
 
+h1, h2, h3, h4, h5, h6, li, a, p{
+    font-family: "Montserrat", sans-serif;    
+    color: #404040;
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
 h1{
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 600;
 }
 
 h2{
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 400;
 }
 
 p{
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 strong{
     font-weight: 600;
 }
 
+/* a:link, a:visited{
+
+} */
+
+/* a:hover, a:active{
+    color:#f60
+} */
+
 .botao{
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     text-decoration: none;
 }
 
 /* CABEÇALHO */
 
+.cabecalho{
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 1.6rem 3.12rem;
+    box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    list-style: none;
+}
+
 .item-lista-cabecalho a{
     color: #112e61;
-    font-size: 14px;
+    font-size: 1.4rem;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 600;
+}
+
+.item-lista-cabecalho a:hover, .item-lista-cabecalho a:active{
+    color:#f60
+}
+
+.item-lista-cabecalho.contem-filhos::after{
+    content: "\2bc6";
 }
 
 /* SEÇÃO HERO */
 
 
 .hero-paragrafo{
-    font-size: 19px;
+    font-size: 1.9rem;
 }
 
 .hero-botao{
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     text-decoration: none;
 }
@@ -54,7 +99,7 @@ strong{
 
 /* .gratuito-h2{
     font-weight: 400;
-    font-size: 35px;
+    font-size: 3.5rem;
 } */
 
 .gratuito-realce{
@@ -63,19 +108,19 @@ strong{
 }
 
 .gratuito-h3{
-    font-size: 23px;
+    font-size: 2.3rem;
     font-weight: 700;
 }
 
 .gratuito-link-lista{
-    font-size: 19px;
+    font-size: 1.9rem;
     text-decoration: none;
 }
 
 /* SEÇÃO DIFERENCIAIS */
 
 /* .diferenciais-h2{
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 400;
 } */
 
@@ -84,17 +129,17 @@ strong{
 }
 
 .diferenciais-p{
-    font-size: 19px;
+    font-size: 1.9rem;
 }
 
 .diferenciais-h3{
     color: #005e88;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
 }
 
 .diferenciais-h3-empresas{
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: 400;
 }
 
@@ -113,7 +158,7 @@ strong{
 /*  */
 
 .blog-postadoem{
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .blog-postadoem a{
@@ -123,13 +168,13 @@ strong{
 }
 
 .blog-titulo-post{
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
     text-decoration: none;
 }
 
 .blog-postagem{
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 
 /*  */
@@ -139,11 +184,11 @@ strong{
 }
 
 .como-lista li{
-    font-size: 19px;
+    font-size: 1.9rem;
 }
 
 .como-paragrafo{
-    font-size: 19px;
+    font-size: 1.9rem;
 }
 
 .como-lista li a, .como-paragrafo a{
@@ -159,17 +204,17 @@ strong{
 
 .rodape-titulo{
     font-weight: 600;
-    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 .rodape-subtitulo{
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
 }
 
 .rodape-seg-subtitulo{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .rodape-link{
