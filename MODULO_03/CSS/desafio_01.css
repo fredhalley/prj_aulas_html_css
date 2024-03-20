@@ -15,6 +15,13 @@ body{
     line-height: 1.4;
 }
 
+main{
+    display: flex;
+    flex-flow: column;
+    gap: 7.63rem;
+    padding: 2.4rem;
+}
+
 h1, h2, h3, h4, a, p, strong, li, figcaption{
     font-family: 'Montserrat', sans-serif;
 }
@@ -22,7 +29,6 @@ h1, h2, h3, h4, a, p, strong, li, figcaption{
 h1{
     font-size: 4.5rem;
     line-height: 1;
-    margin-bottom: 3.2rem;
 }
 
 h1::first-letter{
@@ -32,16 +38,21 @@ h1::first-letter{
 h2{
     font-size: 3.2rem;
     line-height: 1.1;
-    margin-bottom: 2.4rem;
 }
 
 h3{
     font-size: 2.4rem;
     line-height: 1.2;
 }
-
 figure{
-    margin-bottom: 3.2rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+
+figure img{
+    width: 30rem;
 }
 
 p{
@@ -52,7 +63,6 @@ p{
 figcaption{
     font-size: 1.2rem;
     font-style: italic;
-    margin-left: 3.2rem;
 }
 
 /* LVHA */
@@ -64,7 +74,6 @@ a:link, a:visited{
     font-weight: bold;
     text-decoration: double;
     text-decoration-line: underline;
-    margin-bottom: 2.4rem;
 }
 
 a:hover, a:active{
@@ -72,18 +81,19 @@ a:hover, a:active{
 }
 
 ul{
-    margin-bottom: 2.4rem;
     margin-left: 2.4rem;
 }
 
 li{
     color: #035276;
     font-style: italic;
-    margin-bottom: 0.6rem;
 }
 
 section{
-    padding: 2.4rem;
+    display: flex;
+    flex-flow: column;
+    gap: 3.12rem;
+    align-items: center;
 }
 
 .realce-h1{
@@ -127,4 +137,33 @@ hr{
     bottom: 0;
     right: 0;
     width: 8.5rem;    
+}
+
+.container-figure{
+    display: flex;
+    gap: 4.88rem;
+}
+
+.container-precocondicoes{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 3.12rem;
+}
+
+.container-preco,
+.div-condicoes{
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+}
+
+.container-listas{
+    display: flex;
+    gap: 4.88rem;
+}
+.container-lista{
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
 }
