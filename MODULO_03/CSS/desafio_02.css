@@ -25,6 +25,7 @@ h1{
     list-style: none;
     font-weight: 600;
     line-height: 1;
+    letter-spacing: 0.21rem;
 }
 
 h2{
@@ -82,6 +83,7 @@ input::placeholder{
 
 .botao{
     display: inline-block;
+    text-align: center;
     font-size: 2.4rem;
     font-weight: 700;
     text-decoration: none;
@@ -137,10 +139,30 @@ nav ul{
 }
 
 .contem-filhos ul{
-    display: block;
+    display: none;
+    flex-flow: column;
+    gap: 0;
+    align-items: stretch;
+    width: max-content;
     position: absolute;
+    right: 0;
     background-color: white;
-    padding: 2rem;
+    padding: 0.41rem 0;
+    border-radius: 2.5rem;
+    box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15), inset 0 0 0.4rem 0.1rem rgba(0, 0, 0, 0.10);
+}
+
+.contem-filhos ul li{
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+    padding: 0.41rem 2rem;
+}
+
+.contem-filhos ul li:last-child{
+    border-bottom: none;
+}
+
+.contem-filhos:hover ul{
+    display: flex;
 }
 
 /* SEÇÃO HERO */
@@ -150,6 +172,12 @@ nav ul{
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.container-hero{
+    display: flex;
+    gap: 3.12rem;
+    align-items: center;
 }
 
 .hero-botao{
@@ -174,8 +202,22 @@ nav ul{
 
 .iframe-video{
     aspect-ratio: 16/9;
-    width: 42rem;
     border-radius: 2.5rem;
+    flex: 5;
+}
+
+.hero-coluna{
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    flex: 6;
+    align-items: stretch;
+}
+
+.hero-botoes{
+    display: flex;
+    flex-flow: column;
+    gap: 1.6rem;
 }
 
 
@@ -202,8 +244,35 @@ nav ul{
     background-size: cover;
 }
 
+.container-conteudos{
+    display: flex;
+    align-items: center;
+}
+
+.conteudos-titulo{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.conteudo-caixa-logos{
+    display: flex;
+    gap: 0.65rem;
+}
+
 .img-conteudos{
-    width: 44rem;
+    max-width: 47.8rem;
+    flex: 45;
+    position: relative;
+    left: 2rem;
+    z-index: 1;
+}
+
+.conteudos-coluna{
+    display: flex;
+    flex-flow: column;
+    gap: 3.9rem;
+    flex: 55;
 }
 
 .caixa-gratuito-h3{
@@ -219,7 +288,16 @@ nav ul{
     box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15);
 }
 
+.caixas-cursos-hashtag{
+    display: flex;
+    gap: 2.5rem;
+}
+
 .caixa-cursos{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1.6rem;
     position: relative;
     box-shadow: inset 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.15);
     border-radius: 2.5rem;
@@ -249,9 +327,22 @@ nav ul{
     font-weight: 700;
 }
 
+.conteudos-lista-redessociais{
+    display: flex;
+    flex-flow: column;
+    gap: 0.65rem;
+}
+
+.gratuito-link-lista li{
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+}
+
 .gratuito-link-lista:link,
 .gratuito-link-lista:visited{
     display: inline-block;
+    align-items: center;
     padding: 0.42rem 3.12rem;
     background-color: #eeeeee;
     border-radius: 2.5rem;
@@ -279,27 +370,57 @@ nav ul{
 
 
 .caixa-titulo-diferenciais{
+    display: flex;
+    gap: 4.88rem;
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
-    background-image: linear-gradient(225deg, #196b9f, #1a82a7);
     padding: 4.88rem 3.12rem;
+    padding-bottom: 12rem;
+    background-image: linear-gradient(225deg, #196b9f, #1a82a7);
+    color: white;
 }
 
-.caixa-diferenciais-h2{
+.diferenciais-p{
+    flex: 5;
+    margin-top: 0.52rem;
+    text-align: right;
+}
+
+.caixa-diferenciais-h2{    
+    flex: 5;
     border-left: solid 0.5rem #ffb20f;
     padding: 0.52rem 0 0.52rem 2rem;
 }
 
+.bloco-itensdiferenciais{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: -10rem;
+}
+
 .caixa-itens-diferenciais{
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    gap: 1.6rem;
+    align-items: center;
+    text-align: center;
     position: relative;
     border-radius: 2.5rem;
     background-color: white;
     box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
-    padding: 3.12rem 2.5rem;
+    padding: 7rem 2.5rem 3.12rem 2.5rem;
 }
 
 .caixa-itens-diferenciais img{
     width: 100%;
+}
+
+.caixa-item-diferenciais{
+    display: flex;
+    flex-flow: column;
+    gap: 1.02rem;
 }
 
 .caixa-imagem-diferenciais{
@@ -317,14 +438,22 @@ nav ul{
 }
 
 .caixa-restante-diferenciais{
-    padding: 4.88rem;
+    display: flex;
+    flex-flow: column;
+    gap: 4.88rem;
+    padding: 4.88rem 2rem;
+}
+
+.container-diferenciais,
+.container-blog{
+    max-width: 106rem;
 }
 
 .container-diferenciais{
     border-radius: 5rem;
     background-color: white;
     box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.15);
-    padding: 3.12rem 2.5rem;
+    padding: 3.12rem 3.12rem;
 }
 
 .diferenciais-h2 strong{
@@ -357,8 +486,22 @@ nav ul{
     text-decoration: none;
 }
 
+.bloco-imagens-diferenciais{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.diferenciais-empresas{
+    display: flex;
+    flex-flow: column;
+    gap: 3.12rem;
+    align-items: center;
+}
+
 .diferenciais-empresas img{
-    height: 5rem;
+    height: 3rem;
     filter: grayscale(100%);
 }
 
@@ -378,6 +521,19 @@ nav ul{
     background-size: cover;
 }
 
+.container-oquefalam{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 3.12rem;
+}
+
+.oquefalam-titulo{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
 .oquefalam-titulo,
 .oquefalam-titulo h2{
     color: white;
@@ -388,7 +544,18 @@ nav ul{
 }
 
 .oquefalam-carrossel{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     position: relative;
+    align-self: stretch;
+    gap: 2rem;
+}
+
+.oquefalam-carrossel-imagens{
+    display: flex;
+    align-self: stretch;
+    gap: 2rem;
 }
 
 .oquefalam-seta{
@@ -442,6 +609,7 @@ nav ul{
 }
 
 .oquefalam-carroussel-img{
+    flex: 1;
     background-color: #7489af;
     background-blend-mode: multiply;
     position: relative;
@@ -449,7 +617,6 @@ nav ul{
     background-position: 50%;
     background-size: cover;
     aspect-ratio: 16/9;
-    width: 33%;
     border-radius: 2.5rem;
 }
 
@@ -473,8 +640,28 @@ nav ul{
     background-size: cover;
 }
 
+.container-namidia{
+    display: flex;
+    justify-content: space-between;
+    gap: 3.12rem;
+}
+
+.namidia-links,
+.namidia-titulo{
+    display: flex;
+    align-items: center;
+}
+
+.namidia-links{
+    gap: 2rem;
+}
+
+.namidia-titulo{
+    gap: 1.02rem;
+}
+
 .seta-namidia,
-.h2-namidia{
+.h2-namidia{ 
     display: inline-block;
 }
 
@@ -486,16 +673,20 @@ nav ul{
 }
 
 .container-blog{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2.5rem;
     position: relative;
     border-radius: 5rem;
     background-color: #f9f9f9;
     box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.1); 
     padding: 4.88rem;
+    padding-top: 7.63rem;
 }
 
 .caixa-blog-h2{
     position: absolute;
-    top: 0;
+    top: -1rem;
     left: 50%;
     display: inline-block;
     padding: 0.82rem 2.5rem;
@@ -507,14 +698,22 @@ nav ul{
 }
 
 .caixa-postblog{
-    display: inline-block;
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 40%;
+    gap: 1.28rem;
     border-radius: 2.5rem;
     box-shadow: inset 0 0 0.4rem 0.15rem rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    width: 49%;
 }
 .caixa-postblog img{
     width: 100%;
+}
+
+.caixa-imgpostadoem{
+    display: flex;
+    flex-flow: column;
+    gap: 0.42rem;
 }
 
 .container-blog h2{
@@ -549,6 +748,26 @@ nav ul{
     padding: 7.63rem 2rem;
 }
 
+.container-comoajudar,
+.container-comoajudar-2{
+    width: 86rem;
+}
+
+.container-comoajudar,
+.container-comoajudar-2{
+    display: flex;
+    flex-flow: column;    
+}
+
+.container-comoajudar{
+    align-items: center;
+    gap: 3.12rem;
+}
+
+.container-comoajudar-2{
+    gap: 1.6rem;
+}
+
 .caixa-comoajudar-h2{
     display: inline-block;
     padding: 0.42rem 1.6rem;
@@ -559,10 +778,24 @@ nav ul{
 }
 
 .como-ajudarlista{
+    display: flex;
+    flex-flow: column;
+    gap: 1.28rem;
     border-radius: 2.5rem;
     box-shadow: inset 0 0 0.8rem 0.15rem rgba(0, 0, 0, 0.15);
     padding: 2.5rem;
     background-color: #f9f9f9;
+}
+
+.como-ajudarlista li{
+    display: flex;
+    align-items: start;
+    gap: 0.82rem;
+}
+
+.como-ajudarlista li img{
+    position: relative;
+    transform: translateY(40%);
 }
 
 .como-span{
@@ -599,6 +832,30 @@ nav ul{
     background-image: linear-gradient(90deg, #9e4ad7, #753db6);
     color: white;
 }
+.form-minicurso{
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 2rem;
+}
+
+.container-minicurso{
+    display: flex;
+    flex-flow: column;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.form div{
+    display: flex;
+    flex-flow: column;
+    gap: 1.02rem;
+}
+
+.form div label {
+    margin-left: 0.8rem;
+}
 
 .minicurso-realce{
     font-weight: 600;
@@ -614,6 +871,16 @@ nav ul{
 }
 
 /* SEÇÃO RODAPE */
+
+.container-rodape{
+    display: flex;
+    align-items: start;
+    gap: 3.9rem;
+}
+
+.rodape-copyright{
+    text-align: center;
+}
 
 .rodape-titulo,
 .rodape-subtitulo,
@@ -643,8 +910,53 @@ nav ul{
     width: 18rem;
 }
 
+.subsecao-rodape,
+.subsecao-cursosonline,
+.subsecao-assistente,
+.rodape-div-iconelink,
+.rodape-coluna{
+    display: flex;
+    flex-flow: column;
+}
+
+.rodape-coluna{
+    gap: 3.12rem;
+}
+
+.subsecao-rodape{
+    gap: 1.6rem;    
+}
+
+.subsecao-cursosonline{
+    gap: 1.28rem;
+}
+
+.subsecao-assistente{
+    gap: 1.02rem;
+}
+
+.rodape-div-iconelink{
+    gap: 0.82rem;
+}
+
+.rodape-icone-link{
+    display: flex;
+    align-items: center;
+    gap: 1.02rem;
+}
+
+.rodape-redessociais{
+    display: flex;
+    gap: 0.82rem;
+}
+
 .link-redessociais{
     color: transparent !important;
+}
+
+.link-redessociais svg{
+    fill: #404040;
+    stroke: #404040;
 }
 
 .rodape a:active,
@@ -652,11 +964,17 @@ nav ul{
     color: #f60;
 }
 
+
+
 .link-redessociais svg:hover{
     fill: #f60;
 }
 
 .form-newsletter{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1.6rem;
     border-radius: 2.5rem;
     box-shadow: inset 0 0 0.8rem 0.15rem rgba(0, 0, 0, 0.15);
     padding: 2.5rem;
