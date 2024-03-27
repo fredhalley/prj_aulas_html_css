@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #303030;
+}
+
+.grid{
+    width: 100rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 30rem 30rem 30rem;    
+
+    & div{
+        background-color: red;
+        width: 30rem;
+        height: 30rem;
+    }
+
+    & .div1{
+        background-color: yellow;
+    }
+    & .div2{
+        background-color: blue;
+    }
+    & .div3{
+        background-color: orange;
+    }
+    & .div4{
+        background-color: pink;
+    }
+    & .div5{
+        background-color: yellow;
+    }
+
+
+}
