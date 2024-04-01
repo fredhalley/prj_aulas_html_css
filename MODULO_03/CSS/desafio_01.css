@@ -48,6 +48,7 @@ figure{
     display: flex;
     flex-flow: column;
     align-items: center;
+    grid-row: 1 / -1;
 }
 
 
@@ -96,6 +97,19 @@ section{
     align-items: center;
 }
 
+section:nth-child(2){
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 3.12rem;
+    column-gap: 3.9rem;
+
+    & h2{
+        grid-column: 1/ span 3;
+        justify-self: center;
+    }
+}
+
 .realce-h1{
     color: #0588c4;
 }
@@ -140,16 +154,21 @@ hr{
 }
 
 .container-figure{
-    display: flex;
-    gap: 4.88rem;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+    /* gap: 4.88rem; */
+    column-gap: 4.88rem;
+    row-gap: 3.12rem;
+    justify-items: center;
 }
 
-.container-precocondicoes{
+/* .container-precocondicoes{
     display: flex;
     flex-flow: column;
     align-items: center;
     gap: 3.12rem;
-}
+} */
 
 .container-preco,
 .div-condicoes{
@@ -158,10 +177,10 @@ hr{
     gap: 2rem;
 }
 
-.container-listas{
+/* .container-listas{
     display: flex;
     gap: 4.88rem;
-}
+} */
 .container-lista{
     display: flex;
     flex-flow: column;
