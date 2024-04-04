@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrosel - Usando Slider</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <main>
+        <span>Slider</span>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="img/DIO_DESENVOLVIMENTO_WEB.webp" alt="Certificado de Desenvolvimento Web.">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="img/HTML5_CSS_PARTE1_CRIE_UMA_PAGINA_WEB.png" alt="Certificado de Criação de uma pagina Web.">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="img/HTML5_CSS_PARTE2_POSICIONAMENTO_LISTAS_E_NAVEGACAO.png" alt="Certificado de Posicionamento de listas e Navegação.">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="img/HTML5_CSS_PARTE3_TRABALHANDO_COM_FORMULARIOS_E_TABELAS.png" alt="Certificado de Trabalhando com Formularios e Tabelas.">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-img">
+                        <img src="img/HTML5_CSS_PARTE4_AVANÇANDO_NO_CSS.png" alt="Certificado de Avançando no CSS.">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>        
+            <div class="swiper-pagination"></div>        
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'      
+        const swiper = new Swiper()
+      </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

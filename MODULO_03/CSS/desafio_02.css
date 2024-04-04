@@ -110,6 +110,8 @@ input::placeholder{
     border: 0;
     border-bottom: solid 0.4rem #993c38;
     border-right: solid 0.4rem #993c38;
+    transition: ease-in 200ms;
+    transition-property: border;
 }
 
 /* CABEÇALHO */
@@ -134,20 +136,22 @@ nav ul{
     gap: 2.5rem;
 }
 
-.item-lista-cabecalho a{
-    color: #112e61;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 600;
-}
+.item-lista-cabecalho{
+    & a{
+        color: #112e61;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color ease-in 300ms;
 
-.item-lista-cabecalho a:hover, .item-lista-cabecalho a:active{
-    color:#f60
-}
-
-.item-lista-cabecalho.contem-filhos::after{
-    content: "\2bc6";
+        &:hover, &:active{
+            color:#f60;
+        }
+    }
+    &.contem-filhos::after{
+        content: "\2bc6";
+    }
 }
 
 .contem-filhos{
@@ -492,15 +496,21 @@ nav ul{
     font-size: 2.3rem;
     line-height: 1.2;
     font-weight: 400;
+
+    & a{
+        font-size: 2.3rem;
+        line-height: 1.2;
+        color: #005e88;
+        font-weight: 700;
+        text-decoration: none;
+        transition: color ease-in 200ms;
+
+        &:hover{
+            color: #f60;
+        }
+    }
 }
 
-.diferenciais-h3-empresas a{
-    font-size: 2.3rem;
-    line-height: 1.2;
-    color: #005e88;
-    font-weight: 700;
-    text-decoration: none;
-}
 
 .bloco-imagens-diferenciais{
     display: flex;
@@ -660,20 +670,29 @@ nav ul{
     display: flex;
     justify-content: space-between;
     gap: 3.12rem;
-}
 
-.namidia-links,
-.namidia-titulo{
-    display: flex;
-    align-items: center;
-}
+    & .namidia-links,
+    & .namidia-titulo{
+        align-items: center;
+    }
 
-.namidia-links{
-    gap: 2rem;
-}
+    & .namidia-links{
+        gap: 2rem;
 
-.namidia-titulo{
-    gap: 1.02rem;
+        & a{
+            transition: transform ease-in 200ms;
+            
+            &:hover,
+            &:active{
+                transform: scale(1.1);
+            }
+
+        }
+    }
+
+    & .namidia-titulo{
+        gap: 1.02rem;
+    }
 }
 
 .seta-namidia,
